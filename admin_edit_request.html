@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Existing User Registration</title>
+   <link href="css/media_query.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/generalLogin.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_1.css" rel="stylesheet" type="text/css" />
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.9/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+    <script src="/lib/bootstrap.js"></script>
+    <script src="bootbox.min.js"></script>
+    <script src="bootbox.locales.min.js"></script>
+    <script src="/lib/bootstrap.css"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning" style="height:100px">
+         <div>
+             <a class="navbar-brand" href="#" style="width:20%"><img src="images/GCIL.png" style="height:70px; width:320px"></a>
+
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+             <button type="button" class="btn btn-primary">General User Login</button>
+             &nbsp&nbsp&nbsp <button type="button" class="btn btn-danger" onclick="location.replace='Views/Home/AdminLogin.cshtml'">Admin Login</button>
+         </div>
+     </nav>
+        -->
+
+  <nav class="navbar navbar-expand-lg" style="background-color:#ffcccc;position:relative;">
+    <a class="navbar-brand" href="#"><img src="images/GCIL-logo-2016-LEFT.png" style="height:70px;width:320px" /></a>
+          <div style="width:25%; float:right;">
+                  <p id="employeeid" style="color:black;" ></p>
+                </div>
+
+          <br>
+
+
+          <div class="btn-group" role="group" aria-label="Basic example" style="float: right">
+  <button type="button" class="btn btn-success" onclick="window.location.href = 'general_user_login.html';"><i class="fa fa-sign-out"></i>&nbspLogout</button>
+</div>
+
+
+      </a>
+
+
+    </nav>
+     <br>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="static" data-keyboard="false" aria-hidden="true" data-toggle="modal" data-target="#exampleModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+                            &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp
+
+ <div class="btn-group" role="group" aria-label="Basic example" style="float: center">
+  <button type="button" class="btn btn-primary" onclick="goBack();"><i class="fa fa-arrow-left"></i>&nbspBack</button>
+
+</div>
+              &nbsp &nbsp
+
+ <div class="btn-group" role="group" aria-label="Basic example" style="float: center">
+
+    <button type="button" class="btn btn-danger" onclick="clearForm();"><i class="fa fa-window-close"></i>&nbspClear</button>
+  </div>
+
+
+
+&nbsp <div class="container" style="width:100%">
+    <br>
+    <div class="row">
+
+                 &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+              &nbsp &nbsp&nbsp &nbsp&nbsp
+                     <div class="col-sm-6 col-md-4 col-md-offset-4"  style="align:center">
+            <h1 class="text-center login-title">EXISTING USER SERVICE REQUEST</h1>
+            <br>
+
+            <div>
+                <img class="profile-img" src="images/logo_GCIL-2.jpg"
+                    alt="">
+                    <br>
+
+
+<div>
+
+Date<input type="text" name="date" id="date"  class="form-control"  required placeholder="Date" readonly="true">
+
+</div>
+<br>
+
+Employee ID<input type="text" name="employeeid" id="employeeId"  class="form-control"  required placeholder="" readonly="true" style="text-transform: uppercase;">
+
+<br>
+
+Customer ID<input type="text" name="customerid" id="customerid"  class="form-control"  required placeholder="" readonly="true">
+
+<br>
+
+First Name<input type="text" name="name" id="firstname"  class="form-control"  readonly="true" required placeholder="" style="text-transform: uppercase;">
+
+<br>
+Last Name<input type="text" name="lastname" id="lastname"  class="form-control" readonly="true"  required placeholder="" style="text-transform: uppercase;">
+
+<br>
+
+
+Mail
+<input type="email" name="email" id="emailid"  class="form-control" required placeholder="" readonly="true">
+
+</span>
+<br>
+
+Mobile Number<input type="Number" name="mobile" id="mobile"  class="form-control" required placeholder="" readonly="true">
+
+<br>
+
+  Source of Contact<select  class="form-control" id="contactsource" style="text-transform: uppercase;">
+                <option value="Phone">Phone</option>
+                <option value="Email">Email</option>
+                <option value="Social">Social</option>
+            </select>
+
+<br>
+
+Client Information<textarea type="textarea" name="clientinformation" id="clientinformation" readonly="true" class="form-control"  required placeholder="" style="height:130px" style="text-transform: uppercase;">
+
+                 </textarea>
+
+<br>
+
+Request Status<input type="text" name="requeststatus" id="requeststatus"  class="form-control" value="OPEN"  required placeholder="" readonly="true">
+<br>
+
+ <form class="form-signin" ng-app="myApp" ng-controller="validateCtrl"
+name="registrationform" style="align:center" novalidate>
+
+Type of Service<select name="servicetype" id="servicetype" ng-model="serviceSelect" class = "form-control" ng-onload = "existingUserCheck();" style="text-transform: uppercase;">
+<option ng-repeat="option in servicelist" value="{{option.serviceid}}">{{option.name}}</option>
+</select>
+<span style="color:red" > {{msg}}</span>
+
+<br>
+
+
+Query Description<textarea type="textarea" name="querydescription" id="querydescription"  class="form-control" ng-model="querydescription" required placeholder="" style="text-transform: uppercase;">
+
+                 </textarea>
+<span style="color:red" ng-show="registrationform.querydescription.$dirty && registrationform.querydescription.$invalid" id="messagehide">
+<span ng-show="registrationform.querydescription.$error.required" id="messagehide2">Query Description is required.</span>
+</span>
+
+<br>
+
+<button class="btn btn-lg btn-primary btn-block" id="availservice" type="submit" value = "Avail Service" ng-click="saveDetails();"
+ng-disabled="
+registrationform.$invalid ||
+registrationform.querydescription.$dirty && registrationform.querydescription.$invalid && registrationform.querydescription.$error.required"><i class="fa fa-briefcase"></i>&nbsp Avail Service</button>
+<br>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">GCIL  </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3></h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid fh5co_footer_bg pb-3">
+        <div class="container animate-box">
+            <div class="row">
+                <div class="col-12 spdp_right py-5"><img src="images/logo_GCIL-2.jpg" alt="img" class="footer_logo" /></div>
+                <div class="clearfix"></div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer_main_title py-3"> About</div>
+                    <div class="footer_sub_about pb-3">
+                        Galway Centre for Independent Living (GCIL) is a not-for-profit organisation which enables us to provide affordable, premium services.
+                    </div>
+
+                </div>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                <div class="col-12 col-md-3 col-lg-2">
+                    <div class="footer_main_title py-3" style="width:400px"> Company Address</div>
+                    <ul class="footer_menu" style="width:100%">
+                        <p style="width:100%">
+                            Registered Office: Unit 53, Briarhill Business Park, Briarhill, Galway, Ireland.
+                            <ul>
+                                <li>
+                                    Tel:+353(091)773910
+                                </li>
+                                <li>
+                                    Fax:+353(091)773919
+                                </li>
+                                <li>
+                                    Mail:info@gcil.ie
+                                </li>
+                            </ul>
+
+                        </p>
+                    </ul>
+                </div>
+
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div class="col-12 col-md-12 col-lg-4 ">
+                    <div class="footer_main_title py-3"> Our Valuable Services</div>
+                    <a href="#" class="footer_img_post_6"><img src="images/779_779_disabled_min.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/volunteer-social-security-disability-1.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/fec4d8_9e68aa55c6864e1483cc4807175616f9_mv2.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/Orlaith-McManus-working-in-APD-India.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/volunteering-for-people-with-disabilities.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/13880642-disabled-worker.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/Paul_Avis_monthly_column_.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/42811213-disabled-worker-in-wheelchair-in-a-carpenter-s-workshop-with-his-colleague.jpg" alt="img" /></a>
+                    <a href="#" class="footer_img_post_6"><img src="images/worker-wheelchair-carpenter-s-workshop-his-colleagu-disabled-colleague-thumb-up-58263021.jpg" alt="img" /></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid fh5co_footer_right_reserved">
+        <div class="container">
+            <div class="row  ">
+                <div class="col-12 col-md-6 py-4 Reserved"> © GCIL Copyright 2018, All rights reserved.  </div>
+                <div class="col-12 col-md-6 spdp_right py-4">
+
+                    <a href="#" class="footer_last_part_menu">Home</a>
+                    <a href="Contact_us.html" class="footer_last_part_menu">Privacy Policy</a>
+                    <a href="Contact_us.html" class="footer_last_part_menu">Disclaimer</a>
+                    <a href="blog.html" class="footer_last_part_menu">CIL Network</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    function clearForm(){
+    $('#servicetype').val('--SELECT SERVICE TYPE--');
+    $('#querydescription').val('');
+
+  }
+</script>
+
+
+<script type="text/javascript">
+debugger;
+  var d = new Date($.now());
+ var dateTime = (d.getFullYear() + "-" +(d.getMonth()+1) + "-" + d.getDate() +" "+  d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+ $('#date').val(dateTime);
+
+var employeeid = localStorage.getItem("employeeid") || [];
+ document.getElementById('employeeid').innerHTML =  "Welcome " + employeeid.replace('@gcil.ie','');
+
+var firstname = JSON.parse(localStorage.getItem("firstName")) || [];
+var lastName = JSON.parse(localStorage.getItem("lastName")) || [];
+var emailID = JSON.parse(localStorage.getItem("emailID")) || [];
+var mobileNumber = JSON.parse(localStorage.getItem("mobileNumber")) || [];
+var customerid = JSON.parse(localStorage.getItem("customerId")) || [];
+
+var clientinformation = JSON.parse(localStorage.getItem("addressLineOne")) + "\n" +
+ JSON.parse(localStorage.getItem("addressLineTwo"))+ "\n" +
+ JSON.parse(localStorage.getItem("city"))  + "\n" +
+ JSON.parse(localStorage.getItem("county"))  + "\n" +
+ JSON.parse(localStorage.getItem("zipCode"))  + "\n" +
+ JSON.parse(localStorage.getItem("country")) ;
+
+$('#employeeId').val(employeeid);
+$('#customerid').val(customerid);
+$('#firstname').val(firstname);
+$('#lastname').val(lastName);
+$('#emailid').val(emailID);
+$('#mobile').val(mobileNumber);
+$('#clientinformation').val(clientinformation);
+
+function goBack()
+{
+  debugger;
+  window.location = "customer_check.html";
+}
+
+</script>
+
+
+<script>
+
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope, $http, $window, $location, $timeout) {
+  $scope.userid = "generaluser@gcil.ie";
+  $scope.servicelist = [{
+    "serviceid": 1,
+"name": "--Select Service Type--"
+},{
+"serviceid": 2,
+"name": "FINANCE"
+}, {
+"serviceid": 3,
+"name": "PA SERVICES"
+}, {
+"serviceid": 4,
+"name": "OTHERS"
+}];
+$scope.serviceSelect = "1";
+  debugger;
+
+$scope.RegisterNewUser = function(){
+          localStorage.setItem("employeeid", employeeid);
+          $window.location.href = "new_user_registration.html";
+}
+
+$scope.saveDetails = function() {
+    $('#availservice').html("⭕ Availing Service...").prop('disabled',true);
+    if ($scope.serviceSelect == "1")
+    {
+     $scope.msg = 'Please Select Service Type';
+    }
+    else
+    {
+     $scope.msg = '';
+         var dateTime = angular.element(document.getElementById('date')).val();
+         var customerid = angular.element(document.getElementById('customerid')).val();
+         var querydescription = angular.element(document.getElementById('querydescription')).val();
+         var serviceid = angular.element(document.getElementById('servicetype')).val();
+         if(serviceid == "2")
+         {
+          servicetype = "Finance"
+         }
+
+         else if(serviceid == "3")
+         {
+          servicetype = "PA Services"
+         }
+
+         else if(serviceid == "4")
+         {
+          servicetype = "Others"
+         }
+         var contactsource = angular.element(document.getElementById('contactsource')).val();
+         var requeststatus = angular.element(document.getElementById('requeststatus')).val();
+         var employeeid = angular.element(document.getElementById('employeeId')).val();
+         var customertype = "old";
+
+         var obj = {
+         "requestBrief": querydescription,
+         "customerId":customerid,
+         "serviceTypeName":servicetype,
+         "requestStatus":requeststatus,
+         "requestSource":contactsource,
+         "requestDateTime":dateTime,
+         "reqEmpID":employeeid,
+         "customerType":customertype
+   }
+
+       $.ajax({
+            type: 'post',
+            crossorigin: true,
+            url: 'http://192.168.43.174:8082/gcil/saveCustomerRequest',
+            data: JSON.stringify(obj),
+            dataType: "text",
+            contentType: "application/json; charset=utf-8",
+            traditional: true,
+            success: function (xhr, data, status) {
+              $('.modal-body').html("Your " + servicetype +  " Request Saved Successfully!!");
+                    $('#myModal').modal('show');
+
+             },
+             error:function (xhr, ajaxOptions, thrownError){
+                          $('#availservice').html("Avail Service").prop('disabled',false);
+
+            if(xhr.status == "404" && xhr.responseJSON.errorMessage == "Invalid employeeId " + employeeid )
+              {
+                $('.modal-body').html("Your Employee ID " + employeeid +  " is incorrect," + " Please Try Again!!");
+                    $('#myModal').modal('show');
+              }
+
+                else if(xhr.status == "404" && xhr.responseJSON.errorMessage == "Invalid username " + username )
+              {
+                $('.modal-body').html("Your Username " + username +  " is incorrect," + " Please Try Again!!");
+                    $('#myModal').modal('show');
+              }
+
+              else if(xhr.status == "401" && xhr.responseJSON == false )
+              {
+                $('.modal-body').html("Your Password is incorrect," + " Please Try Again!!");
+                    $('#myModal').modal('show');
+              }
+
+              else if( xhr.status == 500) {
+                $('.modal-body').html("Oops!! Something went wrong, Please try after sometime.");
+                    $('#myModal').modal('show');
+              }
+
+  }
+
+   });
+
+    }
+
+
+}
+
+
+  });
+
+
+
+
+</script>
